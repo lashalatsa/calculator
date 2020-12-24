@@ -10,7 +10,6 @@
         android:layout_height="0dp"
         android:layout_weight="0.3"
         android:background="@color/background_color">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,21 +21,17 @@
             android:textStyle="bold"
             android:textSize="40sp"
             android:id="@+id/resultTextView"/>
-
     </FrameLayout>
-
     <androidx.appcompat.widget.LinearLayoutCompat
         android:background="#323642"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.7">
-
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1">
-
             <androidx.appcompat.widget.AppCompatButton
                 android:onClick="procent"
                 android:layout_width="match_parent"
@@ -83,7 +78,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1">
-
             <androidx.appcompat.widget.AppCompatButton
                 android:onClick="degree"
                 android:layout_width="match_parent"
@@ -132,7 +126,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1">
-
             <androidx.appcompat.widget.AppCompatButton
                 android:onClick="delete"
                 android:layout_width="match_parent"
@@ -180,7 +173,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="1">
-
             <androidx.appcompat.widget.AppCompatButton
                 android:onClick="divide"
                 android:layout_width="match_parent"
@@ -229,7 +221,5 @@
                 android:text="="
                 android:textStyle="bold"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
-
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 </androidx.appcompat.widget.LinearLayoutCompat>
