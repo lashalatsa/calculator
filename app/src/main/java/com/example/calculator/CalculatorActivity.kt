@@ -36,13 +36,10 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
             return@setOnLongClickListener true
         }
 
-
-
         dotbutton.setOnClickListener {
             if(resultTextView.text.isNotEmpty() && ("." !in resultTextView.text.toString()))
                 resultTextView.text = resultTextView.text.toString() + "."
         }
-
 
     }
     fun delete(view: View){
@@ -75,7 +72,6 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
             resultTextView.text = ""}
     }
 
-
     fun subscription(view: View){
         val value = resultTextView.text.toString()
         if(value.isNotEmpty()){
@@ -83,7 +79,6 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
             operation = "-"
             resultTextView.text = ""}
     }
-
 
     fun plus(view: View){
         val value = resultTextView.text.toString()
@@ -100,7 +95,6 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
             operation = "%"
             resultTextView.text = ""}
     }
-
 
     @SuppressLint("SetTextI18n")
     fun equal(view: View){
@@ -130,16 +124,10 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
             else if(operation == "^"){
                 result = pow(firstVariable, secondVariable)
                 resultTextView.text = result.toString()}}
-
-
     }
-
+    
     override fun onClick(v: View?) {
         val button = v as Button
         resultTextView.text = "${resultTextView.text}${button.text}"
-
-
-
     }
-
 }
